@@ -1,0 +1,14 @@
+{%  extends "layout.html" %}
+
+{% block body %}
+   
+
+
+
+<h1>Registre su nombre</h1>
+<form action="{{url_for('registro')}}" method="post">  <!--un form entre 2 llaves  para url_for e indicamos el nombre de la funcion que tiene la ruta en el archivo python-->
+    <input type="texto" name="nombre" placeholder="Ingrese nombre">  <!--el input con el nombre de "nombre"-->
+    <button>Enviar</button><!--boton de enviar-->
+</form> 
+
+{% endblock %}

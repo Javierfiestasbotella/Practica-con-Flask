@@ -1,0 +1,13 @@
+{%  extends "layout.html" %}
+
+{% block body %}
+   
+
+
+
+
+    {%for n in variable%} <!-- para introducir un for o un if se mete ente{%  %} -->
+    <h2>{{n}}</h2> <!-- para poder poner variables en este caso la n del for se pone entre dos {{ }}-->
+    {% endfor %}<!--con esto se acaba el for, siempre end+for o if o variables -->
+    
+    {% endblock %}
