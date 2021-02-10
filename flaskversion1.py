@@ -20,7 +20,7 @@ def registro():
     return render_template("registro.html",nombre=nombre)#damos valor a la variable nombre a otro nombre del hatml
 
 @app.route("/ejemplo") #ejecutamos otra ruta con ejemplo detras de slash / "http://127.0.0.1:5000/ejemplo"
-def ejemplo_variable_for(): # función
+def ejemplo(): # función
     variable=[9,8,7,6,5,4,3] #una lista con nombre de variables
     return render_template("ejemplo.html",variable=variable) # junto al templates de la pagina html como argumento la variable con comas
 
